@@ -99,7 +99,7 @@
     - reload systemd
 
 - ansible.builtin.set_fact:
-    setup_params: "{{ '--dashboards --index-management --pipelines' if setup_kibana_dashboards else '--pipelines --index-management' }}"
+    setup_params: "{{ '--dashboards --index-management --pipelines -E setup.ilm.overwrite=true' if setup_kibana_dashboards else '--pipelines --index-management -E setup.ilm.overwrite=true' }}"
 
 - name: filebeat setup
   ansible.builtin.command: > 
