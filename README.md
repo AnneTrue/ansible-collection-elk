@@ -45,7 +45,7 @@ you can also explore all roles variables [here](docs/ROLES_VARS.md)
 Install from GitHub
 
 ```
-ansible-galaxy collection install git+https://github.com/garutilorenzo/ansible-collection-elk
+ansible-galaxy collection install git+https://github.com/AnneTrue/ansible-collection-elk
 ```
 
 ## Examples
