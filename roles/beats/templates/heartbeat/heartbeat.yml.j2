@@ -101,8 +101,8 @@ setup.kibana:
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
   host: "{{ kibana_url }}"
-  username: "{{ beats_username }}"
-  password: "{{ beats_password }}"
+  username: "{{ setup_beats_username }}"
+  password: "{{ setup_beats_password }}"
   {% if kibana_https_enabled -%}
   protocol: "https"
   ssl.enabled: true
